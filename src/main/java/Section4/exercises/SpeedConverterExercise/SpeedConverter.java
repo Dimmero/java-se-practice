@@ -1,4 +1,4 @@
-package Section4.exercises;
+package Section4.exercises.SpeedConverterExercise;
 
 public class SpeedConverter {
 
