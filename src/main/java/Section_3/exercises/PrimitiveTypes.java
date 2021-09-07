@@ -54,5 +54,18 @@ public class PrimitiveTypes {
         System.out.println("MyIntValue= " + myIntValue);
         System.out.println("MyFloatValue= " + myFloatValue);
         System.out.println("MyDoubleValue= " + myDoubleValue);
+
+        char myChar = 'D';
+        char myUnicode = '\u0044';
+        System.out.println(myChar);
+        System.out.println(myUnicode);
+        char myCopyrightChar = '\u00A9';
+        System.out.println(myCopyrightChar);
+        boolean myTrueBoolean = true;
+        boolean myFalseBoolean = false;
+        boolean isCustomerOwerTwentyOne = true;
+
+
+
     }
 }
