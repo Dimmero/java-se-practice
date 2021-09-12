@@ -3,7 +3,7 @@ package Section_5.Exercises.GratestCommonDivisor;
 public class GreatestCommonDivisor {
     public static int getGreatestCommonDivisor(int first, int second){
         int maxDivisor = 0;
-        for (int i = 1; i < getSmallerNumber(first, second); i++) {
+        for (int i = 1; i <= getSmallerNumber(first, second); i++) {
             if ( first % i == 0 && second % i == 0 && i > maxDivisor){
                 maxDivisor = i;
             }
