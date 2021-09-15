@@ -7,9 +7,7 @@ public class PaintJob {
         }
         double area = width * height;
         double needBucket = area / areaPerBucket;
-        if (notWholeNumber(needBucket))
-            return (int)(needBucket - extraBuckets) + 1;
-        else return (int)(area / areaPerBucket - extraBuckets);
+        return (int) Math.ceil(needBucket) - extraBuckets;
     }
 
     public static int getBucketCount(double width, double height, double areaPerBucket) {
@@ -18,22 +16,16 @@ public class PaintJob {
         }
         double area = width * height;
         double needBucket = area / areaPerBucket;
-        if (notWholeNumber(needBucket)){
-            return (int) (area / areaPerBucket + 1);
-        }else return (int) (area / areaPerBucket);
+        return (int) Math.ceil(needBucket);
     }
+
 
     public static int getBucketCount(double area, double areaPerBucket) {
         if (area <= 0 || areaPerBucket <= 0) {
             return -1;
         }
         double needBucket = area / areaPerBucket;
-        if (notWholeNumber(needBucket)){
-            return (int) (area / areaPerBucket) + 1;
-        } else return (int) (area / areaPerBucket) ;
+        return (int) Math.ceil(needBucket);
     }
 
-    public static boolean notWholeNumber(double needBucket){
-        return needBucket % 1 != 1;
-    }
 }
