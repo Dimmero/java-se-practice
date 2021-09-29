@@ -1,6 +1,5 @@
 package Section_6.Exercises.Ex34_ComplexOperations;
 
-import Section_6.Exercises.Ex30_Person.Person;
 
 public class ComplexNumber {
     private double real;
